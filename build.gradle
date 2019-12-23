@@ -1,0 +1,17 @@
+
+/*----------------START:必須ではない------------------------*/
+plugins {
+    id "com.gradle.build-scan" version "3.1.1"
+}
+buildScan {
+    termsOfServiceUrl = "https://gradle.com/terms-of-service"
+    termsOfServiceAgree = "yes"
+    publishAlways()
+
+}
+/*----------------END-------------------------------------*/
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
